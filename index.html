@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angela Mae - Portfolio</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+    
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .skill-card {
+      transition: all 0.3s ease;
+    }
+    
+    .skill-card:hover {
+      transform: translateY(-8px);
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app-wrapper" class="w-full h-full overflow-auto"><!-- Hero Section -->
+   <section id="hero" class="min-h-screen flex items-center justify-center relative px-6 py-20"><!-- Floating decoration circles -->
+    <div class="absolute top-20 left-10 w-20 h-20 rounded-full opacity-20 animate-float" style="animation-delay: 0s;"></div>
+    <div class="absolute bottom-32 right-16 w-32 h-32 rounded-full opacity-20 animate-float" style="animation-delay: 2s;"></div>
+    <div class="absolute top-1/3 right-1/4 w-16 h-16 rounded-full opacity-20 animate-float" style="animation-delay: 4s;"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+     <div class="animate-fadeInUp" style="animation-delay: 0.2s; opacity: 0;">
+      <h1 id="name" class="text-6xl md:text-8xl font-bold mb-6 gradient-text">Angela Mae</h1>
+      <p id="tagline" class="text-2xl md:text-3xl mb-12">Creative Designer &amp; Developer</p>
+      <div class="flex gap-4 justify-center flex-wrap"><a href="#about" id="view-work-btn" class="px-8 py-4 rounded-full font-semibold transition-all hover:scale-105 hover:shadow-lg">View My Work</a> <a href="#contact" id="contact-btn" class="px-8 py-4 rounded-full font-semibold transition-all hover:scale-105">Get In Touch</a>
+      </div>
+     </div>
+    </div>
+   </section><!-- About Section -->
+   <section id="about" class="py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+     <h2 id="about-title" class="text-4xl md:text-5xl font-bold mb-8 text-center">About Me</h2>
+     <div id="about-card" class="p-8 rounded-3xl shadow-xl">
+      <p id="about-text" class="text-lg md:text-xl leading-relaxed mb-6">I'm a passionate designer and developer who loves creating beautiful, functional experiences. With a keen eye for detail and a commitment to excellence, I bring ideas to life through thoughtful design and clean code.</p>
+      <p class="text-lg md:text-xl leading-relaxed">My work spans across web design, branding, and user experience, always with the goal of making the digital world a more beautiful and accessible place.</p>
+     </div>
+    </div>
+   </section><!-- Skills Section -->
+   <section id="skills" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+     <h2 id="skills-title" class="text-4xl md:text-5xl font-bold mb-12 text-center">Skills &amp; Expertise</h2>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="skill-card p-8 rounded-2xl shadow-lg text-center">
+       <div class="text-5xl mb-4">
+        🎨
+       </div>
+       <h3 class="text-2xl font-bold mb-3">Design</h3>
+       <p class="text-lg">Creating stunning visual experiences with attention to every detail</p>
+      </div>
+      <div class="skill-card p-8 rounded-2xl shadow-lg text-center">
+       <div class="text-5xl mb-4">
+        💻
+       </div>
+       <h3 class="text-2xl font-bold mb-3">Development</h3>
+       <p class="text-lg">Building responsive, performant web applications</p>
+      </div>
+      <div class="skill-card p-8 rounded-2xl shadow-lg text-center">
+       <div class="text-5xl mb-4">
+        ✨
+       </div>
+       <h3 class="text-2xl font-bold mb-3">User Experience</h3>
+       <p class="text-lg">Crafting intuitive interfaces that users love</p>
+      </div>
+      <div class="skill-card p-8 rounded-2xl shadow-lg text-center">
+       <div class="text-5xl mb-4">
+        🎭
+       </div>
+       <h3 class="text-2xl font-bold mb-3">Branding</h3>
+       <p class="text-lg">Developing memorable brand identities</p>
+      </div>
+      <div class="skill-card p-8 rounded-2xl shadow-lg text-center">
+       <div class="text-5xl mb-4">
+        📱
+       </div>
+       <h3 class="text-2xl font-bold mb-3">Mobile Design</h3>
+       <p class="text-lg">Optimizing experiences for all devices</p>
+      </div>
+      <div class="skill-card p-8 rounded-2xl shadow-lg text-center">
+       <div class="text-5xl mb-4">
+        🚀
+       </div>
+       <h3 class="text-2xl font-bold mb-3">Innovation</h3>
+       <p class="text-lg">Pushing boundaries with creative solutions</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contact" class="py-20 px-6 min-h-screen flex items-center">
+    <div class="max-w-3xl mx-auto text-center w-full">
+     <h2 id="contact-title" class="text-4xl md:text-5xl font-bold mb-8">Let's Work Together</h2>
+     <p id="contact-text" class="text-xl md:text-2xl mb-12">Have a project in mind? I'd love to hear about it. Let's create something amazing together.</p><a href="mailto:hello@angelamae.com" id="email-btn" class="inline-block px-10 py-5 rounded-full text-xl font-semibold transition-all hover:scale-105 hover:shadow-xl"> hello@angelamae.com </a>
+    </div>
+   </section>
+  </div>
+  <script>
+    const defaultConfig = {
+      background_color: "#f8f7ff",
+      surface_color: "#ffffff",
+      text_color: "#2d3748",
+      primary_action_color: "#667eea",
+      secondary_action_color: "#764ba2",
+      font_family: "Inter",
+      font_size: 16,
+      name: "Angela Mae",
+      tagline: "Creative Designer & Developer",
+      about_title: "About Me",
+      about_text: "I'm a passionate designer and developer who loves creating beautiful, functional experiences. With a keen eye for detail and a commitment to excellence, I bring ideas to life through thoughtful design and clean code.",
+      skills_title: "Skills & Expertise",
+      contact_title: "Let's Work Together",
+      contact_text: "Have a project in mind? I'd love to hear about it. Let's create something amazing together."
+    };
+
+    async function onConfigChange(config) {
+      const bgColor = config.background_color || defaultConfig.background_color;
+      const surfaceColor = config.surface_color || defaultConfig.surface_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const primaryColor = config.primary_action_color || defaultConfig.primary_action_color;
+      const secondaryColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseSize = config.font_size || defaultConfig.font_size;
+      const baseFontStack = 'system-ui, -apple-system, sans-serif';
+      
+      // Apply colors
+      document.getElementById('app-wrapper').style.background = bgColor;
+      document.getElementById('hero').style.color = textColor;
+      document.getElementById('about').style.color = textColor;
+      document.getElementById('skills').style.color = textColor;
+      document.getElementById('contact').style.color = textColor;
+      
+      // Floating circles
+      const circles = document.querySelectorAll('#hero .absolute.rounded-full');
+      circles.forEach(circle => {
+        circle.style.background = primaryColor;
+      });
+      
+      // About card
+      document.getElementById('about-card').style.background = surfaceColor;
+      
+      // Skill cards
+      const skillCards = document.querySelectorAll('.skill-card');
+      skillCards.forEach(card => {
+        card.style.background = surfaceColor;
+      });
+      
+      // Buttons
+      document.getElementById('view-work-btn').style.background = primaryColor;
+      document.getElementById('view-work-btn').style.color = '#ffffff';
+      document.getElementById('contact-btn').style.background = 'transparent';
+      document.getElementById('contact-btn').style.color = primaryColor;
+      document.getElementById('contact-btn').style.border = `2px solid ${primaryColor}`;
+      document.getElementById('email-btn').style.background = secondaryColor;
+      document.getElementById('email-btn').style.color = '#ffffff';
+      
+      // Apply fonts
+      document.getElementById('name').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('tagline').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('about-title').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('about-text').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('skills-title').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('contact-title').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('contact-text').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      
+      // Apply font sizes
+      document.getElementById('name').style.fontSize = `${baseSize * 4}px`;
+      document.getElementById('tagline').style.fontSize = `${baseSize * 1.5}px`;
+      document.getElementById('about-title').style.fontSize = `${baseSize * 2.5}px`;
+      document.getElementById('about-text').style.fontSize = `${baseSize * 1.125}px`;
+      document.getElementById('skills-title').style.fontSize = `${baseSize * 2.5}px`;
+      document.getElementById('contact-title').style.fontSize = `${baseSize * 2.5}px`;
+      document.getElementById('contact-text').style.fontSize = `${baseSize * 1.25}px`;
+      
+      // Update text content
+      document.getElementById('name').textContent = config.name || defaultConfig.name;
+      document.getElementById('tagline').textContent = config.tagline || defaultConfig.tagline;
+      document.getElementById('about-title').textContent = config.about_title || defaultConfig.about_title;
+      document.getElementById('about-text').textContent = config.about_text || defaultConfig.about_text;
+      document.getElementById('skills-title').textContent = config.skills_title || defaultConfig.skills_title;
+      document.getElementById('contact-title').textContent = config.contact_title || defaultConfig.contact_title;
+      document.getElementById('contact-text').textContent = config.contact_text || defaultConfig.contact_text;
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ background_color: value });
+            }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => {
+              config.surface_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ surface_color: value });
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ text_color: value });
+            }
+          },
+          {
+            get: () => config.primary_action_color || defaultConfig.primary_action_color,
+            set: (value) => {
+              config.primary_action_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ primary_action_color: value });
+            }
+          },
+          {
+            get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+            set: (value) => {
+              config.secondary_action_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ secondary_action_color: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            if (window.elementSdk) window.elementSdk.setConfig({ font_family: value });
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            if (window.elementSdk) window.elementSdk.setConfig({ font_size: value });
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["name", config.name || defaultConfig.name],
+        ["tagline", config.tagline || defaultConfig.tagline],
+        ["about_title", config.about_title || defaultConfig.about_title],
+        ["about_text", config.about_text || defaultConfig.about_text],
+        ["skills_title", config.skills_title || defaultConfig.skills_title],
+        ["contact_title", config.contact_title || defaultConfig.contact_title],
+        ["contact_text", config.contact_text || defaultConfig.contact_text]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ae4ea8674cbbc43',t:'MTc2NTc5MDk2Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
